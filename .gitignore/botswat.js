@@ -12,7 +12,7 @@ bot.on('ready', () => {
     console.log("Bot du SWAT prêt!");
 });
 
-bot.login('NTE4NDY4NzE5ODk5MzEyMTI4.DuRPQg.RAC8KYRBMEz3Tum1C5B3IhRJr-c'); //copier/coller le token
+bot.login(process.env.TOKEN); //copier/coller le token
 
 bot.on('message', message => {
 
