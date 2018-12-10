@@ -4,7 +4,7 @@ const Discord = require('discord.js'); //permet l'utilisation de ce fichier par 
 var bot = new Discord.Client();
 var test = (" with SWAT");
 var prefix = ("!");
-let niveau;
+let niveau = 0;
 
 
 bot.on('ready', () => {
@@ -68,7 +68,7 @@ bot.on('message', message => {
                     .setColor('#FE8800')
                     .setTitle(`Niveau 2`) 
                     .setDescription("Le Niveau Vigipirate est de Niveau 2") 
-                    .addField("Description du Niveau 3", `Menace potentielle: Le SWAT procède à des contrôles systématiques, ils ont une tenue d'intervention et les armes sont à la main.`) 
+                    .addField("Description du Niveau 2", `Menace potentielle: Le SWAT procède à des contrôles systématiques, ils ont une tenue d'intervention et les armes sont à la main.`) 
                 message.channel.send({embed: niv2_embed});               
                 console.log('Vigi ' + niveau);
             }else if(niveau === 3){
