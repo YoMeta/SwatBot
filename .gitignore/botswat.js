@@ -8,7 +8,7 @@ let niveau = 0;
 
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: 'SCUM' + test, type: 0}}); //permet de dire que le robot joue à "  "
+    bot.user.setPresence({ game: { name: 'SCUM', type: 0}}); //permet de dire que le robot joue à "  "
     console.log("Bot du SWAT prêt!");
 });
 
@@ -18,6 +18,48 @@ bot.on('message', message => {
 
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
+    
+    if (message.content === prefix + "help"){
+        var help1_embed = new Discord.RichEmbed()
+            .setColor('#FF6E0A')
+            .setTitle(`Liste des Commandes du Bot`) //autre possibilité pour le titre
+            .addField("Liens Utiles:", `- !forum : Permet d'afficher le lien du forum. \n - !map : Permet d'afficher le lien de la ScumMap. \n - !don : Permet d'afficher le lien de la Cagnotte du serveur. \n - !top : Permet d'afficher le lien du Top Serveur.`)
+            .addField('VigiPirate', `- !vigi : Permet d'afficher le niveau de VigiPirate dans la Capitale.`)
+            console.log(`Commande Help Demandée`);
+        message.channel.send(help1_embed);
+    }
+    if (message.content === prefix + "forum"){
+        var forum_embed = new Discord.RichEmbed()
+            .setColor('#00B6E5')
+            .setTitle(`Forum des Cons-Damnés`)
+            .setDescription("https://lescondamnes.fr/index.php")
+        message.channel.send(forum_embed);
+        console.log("Commande Forum demandée");
+    }
+    if (message.content === prefix + "map"){
+        var map_embed = new Discord.RichEmbed()
+            .setColor('#F31A68')
+            .setTitle(`Map Interactive`)
+            .setDescription("https://maps.devzupa.be/en/scum/86/scumisland/#3/-1721.00/1174.00")
+        message.channel.send(map_embed);
+        console.log("Commande Map demandée");
+    }
+    if (message.content === prefix + "don"){
+        var map_embed = new Discord.RichEmbed()
+            .setColor('#006AD7')
+            .setTitle(`Cagnotte des Cons-Damnés`)
+            .setDescription("https://www.paypal.com/pools/c/89ScNuC7i4")
+        message.channel.send(map_embed);
+        console.log("Commande Don demandée");
+    }
+    if (message.content === prefix + "top"){
+        var map_embed = new Discord.RichEmbed()
+            .setColor('#CEB60B')
+            .setTitle(`Top Serveur des Cons-Damnés`)
+            .setDescription("https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w")
+        message.channel.send(map_embed);
+        console.log("Commande top demandée");
+    }
     
         if(message.channel.name === "journal-du-swat"){
 
