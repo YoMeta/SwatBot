@@ -122,6 +122,12 @@ bot.on('message', message => {
                 message.channel.send({embed: niv3_embed});
                 console.log('Vigi ' + niveau); 
             }; 
-        break;
+        break;  
+    }
+    function topserveur() {
+        if (message.channel.name === "général"){
+            message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+        }
+    setInterval(topserveur, 10800000);
     }
 }); 
