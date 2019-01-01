@@ -82,7 +82,12 @@ bot.on('message', message => {
                 niveau = 3;
                 message.channel.send('Le Niveau Vigipirate est passé au Niveau 3');
                 console.log('Niveau ' + niveau);
-            };   
+            };
+            if(message.content === prefix + 'niveau 4'){
+                niveau = 4;
+                message.channel.send('Le Niveau Vigipirate est passé au Niveau 4');
+                console.log('Niveau ' + niveau);
+            };
         }
 
     switch (args[0].toLowerCase()){
@@ -120,6 +125,14 @@ bot.on('message', message => {
                     .setDescription("Le Niveau Vigipirate est de Niveau 3") 
                     .addField("Description du Niveau 3", `Menace réelle: Le SWAT procède à des contrôles systématiques, ils ont une tenue d'intervention et les armes sont "en joue".`) 
                 message.channel.send({embed: niv3_embed});
+                console.log('Vigi ' + niveau); 
+            }else if(niveau === 4){
+                var niv4_embed = new Discord.RichEmbed()
+                    .setColor('#000000')
+                    .setTitle(`Niveau 4`) 
+                    .setDescription("Le Niveau Vigipirate est de Niveau 4") 
+                    .addField("Description du Niveau 4", `La capitale est totalement fermé. Sauf accord, il est interdit d'y rentrer.`) 
+                message.channel.send({embed: niv4_embed});
                 console.log('Vigi ' + niveau); 
             }; 
         break;  
