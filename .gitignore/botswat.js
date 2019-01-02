@@ -181,6 +181,5 @@ bot.on('message', message => {
                 message.channel.get("général").send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
             }
         }
-       }, 60000);
-    }
+    }, 60000);
 }); 
