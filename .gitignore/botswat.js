@@ -8,7 +8,7 @@ let niveau = 0;
 
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: 'SCUM', type: 0}}); //permet de dire que le robot joue à "  "
+    bot.user.setPresence({ game: { name: 'SCUM [!help]', type: 0}}); //permet de dire que le robot joue à "  "
     console.log("Bot du SWAT prêt!");
 });
 
