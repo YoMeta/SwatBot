@@ -149,44 +149,60 @@ bot.on('message', message => {
         var date = new Date();
         var heure = date.getHours();
         var min = date.getMinutes();
-        if(heure === 16) {
+        if(heure === 15) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }else
-        if(heure === 19) {
+        if(heure === 18) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }else
-        if(heure === 22) {
+        if(heure === 21) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }else    
-        if(heure === 1) {
+        if(heure === 0) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }else
-        if(heure === 4) {
+        if(heure === 3) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }else
-        if(heure === 7) {
+        if(heure === 6) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }else
-        if(heure === 10) {
+        if(heure === 9) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }else 
-        if(heure === 13) {
+        if(heure === 12) {
             if(min === 0){
+                if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                min = 1;
             }
         }
     }, 60000);
