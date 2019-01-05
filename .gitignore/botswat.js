@@ -18,6 +18,7 @@ bot.on('message', message => {
 
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
+    var msgauthor = message.author.username.toString();
     
     if (message.content === prefix + "help"){
         var help1_embed = new Discord.RichEmbed()
@@ -67,6 +68,25 @@ bot.on('message', message => {
             .setDescription("https://lescondamnes.fr/index.php?threads/valeur-mon%C3%A9taire.50/")
         message.channel.send(mon_embed);
         console.log("Commande monnaie demandée");
+    }
+    if (message.content === prefix + "tg"){
+        message.channel.send(`Toi tu fermes ta gueule, Connard. Tu laisses mon ${msgauthor} tranquille!`);
+        console.log("tg");
+    }
+    if (message.content === prefix + "lapin"){
+        random(); //déclence la fonction Random
+        if (randnum == 1){
+            message.channel.send(`Lapin, de la part de ${msgauthor}, tu es un gros con.`);
+            console.log(`lapin ${randnum}`);
+        }
+        if (randnum == 2){
+            message.channel.send("Lapin... Ta Gueule!");
+            console.log(`lapin ${randnum}`);
+        }
+        if (randnum == 3){
+            message.channel.send("De toute façon Lapin, tu n'es là que pour la prime...");
+            console.log(`lapin ${randnum}`);
+        }
     }
     
         if(message.channel.name === "journal-du-swat"){
@@ -207,3 +227,9 @@ bot.on('message', message => {
         }
     }, 60000);
 }); 
+
+function random(min, max) { //Permet de créer une fonction qui va calculer un chiffre entier entre deux nombres entiers définis
+    min = Math.ceil(1);  //valeur min
+    max = Math.floor(3); //valeur max
+    randnum = Math.floor(Math.random() * (max - min + 1) + min);  //calcul le chiffre random dans le cas ou min = 1 et max = 3, réponse 1, 2, ou 3 possible
+}
