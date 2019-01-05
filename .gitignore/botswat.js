@@ -26,6 +26,7 @@ bot.on('message', message => {
             .setTitle(`Liste des Commandes du Bot`) //autre possibilité pour le titre
             .addField("Liens Utiles:", `- !forum : Permet d'afficher le lien du forum. \n- !map : Permet d'afficher le lien de la ScumMap. \n- !don : Permet d'afficher le lien de la Cagnotte du serveur. \n- !top : Permet d'afficher le lien du Top Serveur. \n- !monnaie : Permet d'afficher le lien vers la Valeur Monétaire.`)
             .addField('VigiPirate', `- !vigi : Permet d'afficher le niveau de VigiPirate dans la Capitale.`)
+            .addField('Au cas où...', '- !lapin : Si jamais il vous embête trop...')
             console.log(`Commande Help Demandée`);
         message.channel.send(help1_embed);
     }
