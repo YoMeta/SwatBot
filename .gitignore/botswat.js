@@ -66,7 +66,7 @@ bot.on('message', message => {
         var mon_embed = new Discord.RichEmbed()
             .setColor('#1C9619')
             .setTitle(`Monnaie des Cons-Damnés`)
-            .setDescription("https://lescondamnes.fr/index.php?threads/valeur-mon%C3%A9taire.50/")
+            .setDescription("https://lescondamnes.fr/index.php?threads/fonctionnement-de-la-banque.86/")
         message.channel.send(mon_embed);
         console.log("Commande monnaie demandée");
     }
