@@ -130,53 +130,53 @@ bot.on('message', message => {
             };
         }
 
-    //switch (args[0].toLowerCase()){
+    switch (args[0].toLowerCase()){
         
-        //case "vigi":    
+        case "vigi":    
         
-            //if(niveau === 0){
-               // var niv0_embed = new Discord.RichEmbed()
-                   // .setColor('#FFFFFF')
-                  //  .setTitle(`Niveau 0`) 
-                    //.setDescription("Le Niveau Vigipirate est de Niveau 0") 
-                    //.addField("Description du Niveau 0", `Absence de Menace: Le SWAT procède à des contrôles faibles, ils ont une tenue standard et les armes sont rangées.`) 
-               // message.channel.send({embed: niv0_embed});
-               // console.log('vigi ' + niveau);
-           // }else if(niveau === 1){
-                //var niv1_embed = new Discord.RichEmbed()
-                    //.setColor('#FFFE00')
-                    //.setTitle(`Niveau 1`) 
-                    //.setDescription("Le Niveau Vigipirate est de Niveau 1") 
-                    //.addField("Description du Niveau 1", `Menace faible: Le SWAT procède à des contrôles normaux, ils ont une tenue standard et les armes sont rangées.`) 
-               // message.channel.send({embed: niv1_embed});
-               // console.log('Vigi ' + niveau);
-         //   }else if(niveau === 2){
-               // var niv2_embed = new Discord.RichEmbed()
-                  //  .setColor('#FE8800')
-                  //  .setTitle(`Niveau 2`) 
-                   // .setDescription("Le Niveau Vigipirate est de Niveau 2") 
-                  //  .addField("Description du Niveau 2", `Menace potentielle: Le SWAT procède à des contrôles systématiques, ils ont une tenue d'intervention et les armes sont à la main.`) 
-               // message.channel.send({embed: niv2_embed});               
-               // console.log('Vigi ' + niveau);
-          //  }else if(niveau === 3){
-               // var niv3_embed = new Discord.RichEmbed()
-                  //  .setColor('#FF0000')
-                    //.setTitle(`Niveau 3`) 
-                  //  .setDescription("Le Niveau Vigipirate est de Niveau 3") 
-                   // .addField("Description du Niveau 3", `Menace réelle: Le SWAT procède à des contrôles systématiques, ils ont une tenue d'intervention et les armes sont "en joue".`) 
-               // message.channel.send({embed: niv3_embed});
-               // console.log('Vigi ' + niveau); 
-          //  }else if(niveau === 4){
-               // var niv4_embed = new Discord.RichEmbed()
-                  //  .setColor('#000000')
-                   // .setTitle(`Niveau 4`) 
-                   // .setDescription("Le Niveau Vigipirate est de Niveau 4") 
-                   // .addField("Description du Niveau 4", `La capitale est totalement fermé. Sauf accord, il est interdit d'y rentrer.`) 
-               // message.channel.send({embed: niv4_embed});
-              //  console.log('Vigi ' + niveau); 
-           // }; 
-      //  break;  
-   / }
+            if(niveau === 0){
+                var niv0_embed = new Discord.RichEmbed()
+                    .setColor('#FFFFFF')
+                    .setTitle(`Niveau 0`) 
+                    .setDescription("Le Niveau Vigipirate est de Niveau 0") 
+                    .addField("Description du Niveau 0", `Absence de Menace: Le SWAT procède à des contrôles faibles, ils ont une tenue standard et les armes sont rangées.`) 
+                message.channel.send({embed: niv0_embed});
+                console.log('vigi ' + niveau);
+            }else if(niveau === 1){
+                var niv1_embed = new Discord.RichEmbed()
+                    .setColor('#FFFE00')
+                    .setTitle(`Niveau 1`) 
+                    .setDescription("Le Niveau Vigipirate est de Niveau 1") 
+                    .addField("Description du Niveau 1", `Menace faible: Le SWAT procède à des contrôles normaux, ils ont une tenue standard et les armes sont rangées.`) 
+                message.channel.send({embed: niv1_embed});
+                console.log('Vigi ' + niveau);
+            }else if(niveau === 2){
+                var niv2_embed = new Discord.RichEmbed()
+                    .setColor('#FE8800')
+                    .setTitle(`Niveau 2`) 
+                    .setDescription("Le Niveau Vigipirate est de Niveau 2") 
+                    .addField("Description du Niveau 2", `Menace potentielle: Le SWAT procède à des contrôles systématiques, ils ont une tenue d'intervention et les armes sont à la main.`) 
+                message.channel.send({embed: niv2_embed});               
+                console.log('Vigi ' + niveau);
+            }else if(niveau === 3){
+                var niv3_embed = new Discord.RichEmbed()
+                    .setColor('#FF0000')
+                    .setTitle(`Niveau 3`) 
+                    .setDescription("Le Niveau Vigipirate est de Niveau 3") 
+                    .addField("Description du Niveau 3", `Menace réelle: Le SWAT procède à des contrôles systématiques, ils ont une tenue d'intervention et les armes sont "en joue".`) 
+                message.channel.send({embed: niv3_embed});
+                console.log('Vigi ' + niveau); 
+            }else if(niveau === 4){
+                var niv4_embed = new Discord.RichEmbed()
+                    .setColor('#000000')
+                    .setTitle(`Niveau 4`) 
+                    .setDescription("Le Niveau Vigipirate est de Niveau 4") 
+                    .addField("Description du Niveau 4", `La capitale est totalement fermé. Sauf accord, il est interdit d'y rentrer.`) 
+                message.channel.send({embed: niv4_embed});
+                console.log('Vigi ' + niveau); 
+            }; 
+       break;  
+    }
     setInterval(function() {
         var date = new Date();
         var heure = date.getHours();
