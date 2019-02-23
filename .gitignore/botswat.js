@@ -69,7 +69,7 @@ bot.on('message', message => {
         var top_embed = new Discord.RichEmbed()
             .setColor('#CEB60B')
             .setTitle(`Top Serveur des Cons-Damnés`)
-            .setDescription("https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w")
+            .setDescription("https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv")
         message.channel.send(top_embed);
         console.log("Commande top demandée");
     }
@@ -184,7 +184,7 @@ bot.on('message', message => {
         if(heure === 15) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
@@ -192,7 +192,7 @@ bot.on('message', message => {
         if(heure === 18) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
@@ -200,7 +200,7 @@ bot.on('message', message => {
         if(heure === 21) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
@@ -208,7 +208,7 @@ bot.on('message', message => {
         if(heure === 0) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
@@ -216,7 +216,7 @@ bot.on('message', message => {
         if(heure === 3) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
@@ -224,7 +224,7 @@ bot.on('message', message => {
         if(heure === 6) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
@@ -232,7 +232,7 @@ bot.on('message', message => {
         if(heure === 9) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
@@ -240,7 +240,7 @@ bot.on('message', message => {
         if(heure === 12) {
             if(min === 0){
                 if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-zones-de-pvp-d1-d2-d3-d4-discord-httpsdiscordggn6ssg7w');
+                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/fr-18-les-con-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
                 if(min === 1) return;
             }
