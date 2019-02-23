@@ -14,6 +14,17 @@ bot.on('ready', () => {
 
 bot.login(process.env.TOKEN); //copier/coller le token
 
+bot.on('guildMemberAdd', member => {
+    let serverTag = member.guild.name //récupère le nom du serveur
+    const welcomechannel = member.guild.channels.find('id', '548889699771613214')
+    
+    var embed = new Discord.RichEmbed()
+        .setColor('#FF6005')
+        .setDescription(`Bienvenue sur le serveur **${serverTag}**, <@${member.user.id}> ! \n Viens dans le canal Acceuil/Bienvenue afin qu'un Admin s'occupe de toi !`)
+    return welcomechannel.send({embed})
+
+});
+
 bot.on('message', message => {
 
     if (!message.content.startsWith(prefix)) return;
