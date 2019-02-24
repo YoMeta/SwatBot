@@ -20,7 +20,7 @@ bot.on('guildMemberAdd', member => {
     
     var embed = new Discord.RichEmbed()
         .setColor('#FF6005')
-        .setDescription(`Bienvenue sur le serveur **${serverTag}**, <@${member.user.id}> ! \n Viens dans le canal #bienvenue-😎 afin qu'un Admin s'occupe de toi !`)
+        .setDescription(`Bienvenue sur le serveur **${serverTag}**, ${member} ! \n Viens dans le canal vocal "Bienvenue 😎" afin qu'un Admin s'occupe de toi !`)
     return welcomechannel.send({embed})
 
 });
