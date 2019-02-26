@@ -183,6 +183,7 @@ bot.on('message', message => {
         if (randnum == 4){
             message.channel.send(`Vous savez pourquoi on l'appelle Lapin? Bah c'est pas pour sa vitesse... :eggplant: `)
             console.log(`lapin ${randnum}`);
+        }
         const embed_lapin = new Discord.RichEmbed()
             .setColor(0xFFA100)
             .setTitle(`Modération`)
