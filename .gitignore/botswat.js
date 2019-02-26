@@ -5,7 +5,7 @@ var bot = new Discord.Client();
 var test = (" with SWAT");
 var prefix = ("!");
 let niveau = 0;
-
+const logs = bot.channels.get("549925949043638283" , "logs")
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: 'SCUM [!help]', type: 0}}); //permet de dire que le robot joue à "  "
@@ -17,11 +17,12 @@ bot.login(process.env.TOKEN); //copier/coller le token
 bot.on('guildMemberAdd', member => {
     let serverTag = member.guild.name //récupère le nom du serveur
     const welcomechannel = member.guild.channels.find('id', '548889699771613214')
+    message.channel.send(`Bienvenue sur le serveur **${serverTag}**, ${member} ! \n Viens dans le canal vocal "Bienvenue 😎" afin qu'un Admin s'occupe de toi !`)
     
-    var embed = new Discord.RichEmbed()
-        .setColor('#FF6005')
-        .setDescription(`Bienvenue sur le serveur **${serverTag}**, ${member} ! \n Viens dans le canal vocal "Bienvenue 😎" afin qu'un Admin s'occupe de toi !`)
-    return welcomechannel.send({embed})
+    //var bienvenue = new Discord.RichEmbed()
+    //    .setColor('#FF6005')
+    //    .setDescription(`Bienvenue sur le serveur **${serverTag}**, ${member} ! \n Viens dans le canal vocal "Bienvenue 😎" afin qu'un Admin s'occupe de toi !`)
+    //return welcomechannel.send(bienvenue)
 
 });
 
@@ -181,68 +182,85 @@ bot.on('message', message => {
         var date = new Date();
         var heure = date.getHours();
         var min = date.getMinutes();
+        var sec = date.getSeconds();
         if(heure === 15) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }
             }
         }else
         if(heure === 18) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }
             }
         }else
         if(heure === 21) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }
             }
         }else    
         if(heure === 0) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }
             }
         }else
         if(heure === 3) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }
             }
         }else
         if(heure === 6) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }
             }
         }else
         if(heure === 9) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }
             }
         }else 
         if(heure === 12) {
             if(min === 0){
+                if(sec === 0){
                 if(message.channel.name === "journal-du-swat") return;
                 message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
                 min = 1;
-                if(min === 1) return;
+                //if(min === 1) return;
+                }    
             }
         }
     }, 60000);
