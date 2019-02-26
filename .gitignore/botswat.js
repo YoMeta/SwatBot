@@ -21,7 +21,7 @@ bot.on('guildMemberAdd', member => {
     var bienvenue = new Discord.RichEmbed()
         .setColor('#FF6005')
         .setDescription(`Bienvenue sur le serveur **${serverTag}**, ${member} ! \n Viens dans le canal vocal "Bienvenue 😎" afin qu'un Admin s'occupe de toi !`)
-    return welcomechannel.send(bienvenue)
+    welcomechannel.send(bienvenue)
 
     const embed_bvn = new Discord.RichEmbed()
         .setColor(0x18F012)
