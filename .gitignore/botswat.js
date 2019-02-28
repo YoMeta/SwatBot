@@ -355,87 +355,104 @@ bot.on('message', message => {
         var heure = date.getHours();
         var min = date.getMinutes();
         var sec = date.getSeconds();
+        var mil = date.getMilliseconds();
         if(heure === 15) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }
             }
         }else
         if(heure === 18) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }
             }
         }else
         if(heure === 21) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }
             }
         }else    
         if(heure === 0) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }
             }
         }else
         if(heure === 3) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }
             }
         }else
         if(heure === 6) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }
             }
         }else
         if(heure === 9) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }
             }
         }else 
         if(heure === 12) {
             if(min === 0){
                 if(sec === 0){
-                if(message.channel.name === "journal-du-swat") return;
-                message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
-                min = 1;
-                //if(min === 1) return;
+                    if(mil === 0){
+                        if(message.channel.name === "journal-du-swat") return;
+                        message.channel.send('On répète mais ça nous aide: ça prend deux secondes pour nous envoyer au sommet! \n https://scum.top-serveurs.net/vote/fr-18-les-cons-damnes-rp-semi-rp-pvp-connexion-discord-httpsdiscordggdgdnpdv');
+                        min = 1;
+                        //if(min === 1) return;
+                    }
                 }    
             }
         }
-    }, 1000);
+    }, 1);
 }); 
 
 function random(min, max) { //Permet de créer une fonction qui va calculer un chiffre entier entre deux nombres entiers définis
