@@ -20,7 +20,7 @@ bot.on('guildMemberAdd', member => {
     
     var bienvenue = new Discord.RichEmbed()
         .setColor('#FF6005')
-        .setDescription(`Bienvenue sur le serveur **${serverTag}**, ${member} ! \n Viens dans le canal vocal "Bienvenue 😎" afin qu'un Admin s'occupe de toi !`)
+        .setDescription(`Bienvenue sur le serveur **${serverTag}**, ${member} ! \n Viens dans le canal vocal "Bienvenue 😎" entre 19h et 22h afin qu'un Admin s'occupe de toi !`)
     welcomechannel.send(bienvenue)
 
     const embed_bvn = new Discord.RichEmbed()
@@ -35,7 +35,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('guildMemberRemove', member => {
-    member.guild.channels.find('id', '550025971550519325').send(`${member} vient de quitter le serveur.`)
+    member.guild.channels.find('id', '550025971550519325').send(`${member.user.tag} vient de quitter le serveur.`)
     const logs = bot.channels.get("549925949043638283" ,"logs");
 
     const embed_arv = new Discord.RichEmbed()
