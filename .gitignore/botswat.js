@@ -60,7 +60,7 @@ bot.on('message', message => {
         var help1_embed = new Discord.RichEmbed()
             .setColor('#FF6E0A')
             .setTitle(`Liste des Commandes du Bot`) //autre possibilité pour le titre
-            .addField("Liens Utiles:", `- !forum : Permet d'afficher le lien du forum. \n- !map : Permet d'afficher le lien de la ScumMap. \n- !don : Permet d'afficher le lien de la Cagnotte du serveur. \n- !top : Permet d'afficher le lien du Top Serveur. \n- !monnaie : Permet d'afficher le lien vers la Valeur Monétaire.`)
+            .addField("Liens Utiles:", `- !hello : Permet d'afficher les horaires d'accueil. \n- !forum : Permet d'afficher le lien du forum. \n- !map : Permet d'afficher le lien de la ScumMap. \n- !don : Permet d'afficher le lien de la Cagnotte du serveur. \n- !top : Permet d'afficher le lien du Top Serveur. \n- !monnaie : Permet d'afficher le lien vers la Valeur Monétaire.`)
             //.addField('VigiPirate', `- !vigi : Permet d'afficher le niveau de VigiPirate dans la Capitale.`)
             .addField('Au cas où...', '- !lapin : Si jamais il vous embête trop...')
             console.log(`Commande Help Demandée`);
@@ -192,6 +192,18 @@ bot.on('message', message => {
             .setTimestamp()
             .setFooter('©YoMeta ~ ScumBot')
         logs.sendEmbed(embed_lapin);
+    }
+    if (message.content === prefix + "hello"){
+        message.channel.send(`Les horaires d'accueil des nouveaux est entre 19 heures et 22 heures! Pour plus d'infos, n'hésitez pas à vous renseigner auprès des Admins. :)`);
+        console.log("hello");
+        const embed_hello = new Discord.RichEmbed()
+            .setColor(0xFFA100)
+            .setTitle(`Modération`)
+            .setColor(0xFFA100)
+            .setDescription(`Action: Hello\nChannel: ${message.channel.name}\nPar: ${message.author.username}#${message.author.discriminator}`)
+            .setTimestamp()
+            .setFooter('©YoMeta ~ ScumBot')
+        logs.sendEmbed(embed_hello);
     }
     
         if(message.channel.name === "journal-du-swat"){
